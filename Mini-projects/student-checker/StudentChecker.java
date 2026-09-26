@@ -5,19 +5,20 @@ public class StudentChecker {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Welcome to CCAT student checker");
     
-    System.out.println("Please enter your name: ");
+    System.out.print("Please enter your name: ");
     String name = scanner.nextLine();
 
-    System.out.println("Please enter your 5 digit student ID: ");
+    System.out.print("Please enter your 5 digit student ID: ");
     int studentId = scanner.nextInt();
 
-    System.out.println("Checking if you are a student..."); ");  
+    System.out.println("Checking if you are a student...");
     
     if (studentId <10000 || studentId > 99999) {
         System.out.println("Invalid student ID. Please enter a 5 digit student ID.");
     } 
     else {
-        System.out.println("Hello " + name + ", with a student ID of " + studentId + ". You are currently enrolled in CCAT.");")}
+      System.out.println("Hello " + name + ", with a student ID of " + studentId + ". You are currently enrolled in CCAT.");
+    }
     scanner.close();  
     }
 }
